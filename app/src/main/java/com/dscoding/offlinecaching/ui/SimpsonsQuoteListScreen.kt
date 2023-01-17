@@ -39,8 +39,10 @@ fun SimpsonsQuoteListScreen(
 ) {
     val state = viewModel.state.value
 
-    val pullRefreshState = rememberPullRefreshState(state.isLoading,
-        { viewModel.getSimpsonsQuoteList(forceRefresh = true) })
+    val pullRefreshState = rememberPullRefreshState(
+        state.isLoading,
+        { viewModel.getSimpsonsQuoteList(forceRefresh = true) }
+    )
 
     Box(
         Modifier

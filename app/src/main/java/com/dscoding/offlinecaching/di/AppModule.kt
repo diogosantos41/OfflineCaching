@@ -33,7 +33,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDatabase(app: Application) : SimpsonsQuoteCacheDb =
+    fun provideDatabase(app: Application): SimpsonsQuoteCacheDb =
         Room.databaseBuilder(app, SimpsonsQuoteCacheDb::class.java, "simpsons_quotes_database")
             .build()
 

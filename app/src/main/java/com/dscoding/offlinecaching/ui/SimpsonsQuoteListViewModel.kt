@@ -44,7 +44,6 @@ class SimpsonsQuoteListViewModel @Inject constructor(private val repository: Sim
                         _state.value = state.value.copy(
                             isLoading = false
                         )
-
                 }
             }
             .launchIn(viewModelScope)
